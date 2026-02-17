@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Apology - Heart Edition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .heart {
+            font-size: 100px;
+            animation: beat 1.5s infinite;
+            color: white;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        .phone {
+            font-size: 60px;
+            animation: ring 1s infinite;
+        }
+        @keyframes ring {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-5deg); }
+            75% { transform: rotate(5deg); }
+        }
+        #story {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hey, Pick Up the Phone, Heartfelt Apology!</h1>
+    <div class="phone">📞</div>
+    <p>sayang, coba angkat telefonnya yaa... aku bener bener kangen sama kamu</p>
+    <div class="heart">🤍</div>
+    <button onclick="showStory()">Lihat Cerita Maafnya</button>
+    <div id="story">
+        <h2>Cerita Maaf dari Hati Putih</h2>
+        <p>babe, aku minta maaf banget ya. Aku nggak sengaja nggak angkat telepon kamu 9 kali—aku lagi tidur nyenyak! Bukan maksud aku cuekin kamu. Kamu spesial banget buat aku, kayak hati yang berdenyut ini. Yuk, maafin aku dan kita teleponan lagi nanti—aku janji bakal angkat sekarang!</p>
+        <p>(Hati putihnya berdenyut terus, kayak hatiku yang nggak bisa diem kalau inget kamu. Klik lagi kalau mau refresh!)</p>
+    </div>
+    
+    <script>
+        function showStory() {
+            document.getElementById('story').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
